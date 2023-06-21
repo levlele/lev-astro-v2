@@ -1,7 +1,14 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section class="mb-10 md:mb-16 md:flex md:col-span-3 md:row-span-1 md:pt-5">
 
   <div class="my-4 md:max-w-xs md:m-0 md:mr-6 xl:text-center">
-    <img class="outline-0 border border-black object-cover w-full max-h-48 md:w-auto md:max-w-xs shadow-[8px_8px_0px_rgba(32,227,178,1)]" src="./assets/avatar.jpg" alt="Avatar">
+    <img class="outline-0 border border-black object-cover w-full max-h-48 md:w-auto md:max-w-xs shadow-[8px_8px_0px_rgba(32,227,178,1)]" src="./../assets/avatar.jpg" alt="Avatar">
 
     <div class="mt-4 max-w-xs hidden md:block xl:hidden">
       <p class="block text-xs p-0 m-0 leading-4 font-light italic"><q class="bg-primary/20">Got to move on sometime and it's about time by putting one foot in front of another</q> <span class="block">Martin L. Gore</span></p>
@@ -17,13 +24,13 @@
     </div>
 
     <div class="xl:basis-2/4">
-      <p class="block text-xs p-0 m-0 leading-4 xl:max-w-prose">Diseñador especializado en UI/UX con enfoque en el frontend, dedicado a crear interfaces y optimizarlas. He trabajado tanto en agencias pequeñas para clientes multinacionales como en proyectos específicos para grandes empresas. Mis habilidades destacadas abarcan un amplio conocimiento y experiencia en todas las etapas del desarrollo de interfaces gráficas, desde su concepción y planificación hasta el diseño y su implementación.</p>
-      <p class="block text-xs p-0 m-0 mt-4 leading-4">Fundamentalista del autodidactismo.</p>
+      <p class="block text-xs p-0 m-0 leading-4 xl:max-w-prose">{t('profile.bio')}</p>
+      <p class="block text-xs p-0 m-0 mt-4 leading-4">{t('profile.subtitle')}</p>
     </div>
     
     <div class="absolute -bottom-3 md:right-4">
-      <a href="mailto:leandrovilanova@gmail.com" class="shadow-sm py-5 px-8 border border-black transition-colors text-black uppercase mr-1 bg-gray-300 hover:bg-gray-200 ease-in-out duration-500">Contactar</a>
-      <a href="tel:541132852028" class="shadow-sm shadow-secondary/50 py-5 px-8 border border-black transition text-black uppercase bg-primary hover:bg-secondary ease-in-out duration-500">Contratar</a>
+      <a href="mailto:leandrovilanova@gmail.com" class="shadow-sm py-5 px-8 border border-black transition-colors text-black uppercase mr-1 bg-gray-300 hover:bg-gray-200 ease-in-out duration-500">{t('profile.contact')</a>
+      <a href="tel:541132852028" class="shadow-sm shadow-secondary/50 py-5 px-8 border border-black transition text-black uppercase bg-primary hover:bg-secondary ease-in-out duration-500">{t('profile.hire')</a>
     </div>
 
     <div class="mt-4 max-w-xs md:hidden xl:block xl:mt-0 xl:basis-1/4">

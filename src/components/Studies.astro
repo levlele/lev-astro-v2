@@ -1,47 +1,18 @@
 ---
-const studies = [
-  {
-    "id": "Licenciatura en Diseño y Comunicación Visual",
-    "place": "Universidad Nacional de Lanús"
-  },
-  {
-    "id": "Diseño UX",
-    "place": "Digital House"
-  },
-  {
-    "id": "Ilustración Tradicional",
-    "place": "Sótano Blanco, J.M.Giuffra 382, CABA"
-  },
-  {
-    "id": "Ilustración Digital",
-    "place": "Escuela XArte, Banfield, Buenos Aires"
-  },
-  {
-    "id": "Seminario de Posgrado de Ilustración y Procesos Digitales",
-    "place": "Universidad Nacional de San Martín"
-  },
-  {
-    "id": "Desarrollo",
-    "place": "html / Nunjucks / Astro / css / Sass / Tailwind / js / JQuery / Gulp / React / Next / React Native / Vue / Nuxt"
-  },
-  {
-    "id": "Diseño",
-    "place": "Adobe Creative Cloud / Sketch / Figma / Blender"
-  },
-  {
-    "id": "Inglés Avanzado",
-    "place": "Cultural Inglesa de Buenos Aires, Av. Cabildo 1008, CABA"
-  }
-];
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const studies = t('studies');
 ---
 
-<aside class="bg-black col-span-1 row-span-2 p-12 relative shadow-[8px_8px_0px_rgba(32,227,178,1)] mb-8">
-  <h2 class="text-white antialiased font-light text-5xl uppercase absolute left-[-114px] top-2/4 rotate-90">Estudios</h2>
-
+<aside class="bg-black col-span-1 row-span-2 p-12 md:p-6 pb-16 lg:p-12 shadow-[8px_8px_0px_rgba(32,227,178,1)] mb-8 relative">
   { studies.map((study) => (
     <p class="text-primary text-xs leading-5 mb-5">
-      <span class="block text-white">{ study.id }</span>
+      <span class="block text-white">{ study.title }</span>
       { study.place }
     </p>
   ))}
+  <h2 class="text-white antialiased font-light text-3xl uppercase bg-primary px-4 pt-2 text-center absolute bottom-0 left-12 right-12 md:left-6 md:right-6 lg:left-12 lg:right-12">{t('studies.title')}</h2>
 </aside>

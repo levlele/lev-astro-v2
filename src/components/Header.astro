@@ -1,3 +1,10 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <header class="col-span-3 md:flex md:items-center lg:py-6">
   <div class="rounded-full">
     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -10,9 +17,9 @@
     <h1 class="text-lg md:ml-auto absolute top-8 left-24 md:static md:top-auto md:left-auto md:max-w-fit">Leandro Vilanova</h1>
 
     <div class="mt-4 md:mt-0">
-      <span class="block text-xs mb-1 md:mb-0">Diseñador UI/UX</span>
-      <span class="block text-xs mb-1 md:mb-0">Desarrollador frontend</span>
-      <span class="block text-xs">Ilustrador</span>
+      <span class="block text-xs mb-1 md:mb-0">{t('header.designer')}</span>
+      <span class="block text-xs mb-1 md:mb-0">{t('header.developer')}</span>
+      <span class="block text-xs">{t('header.illustrator')}</span>
     </div>
   </div>
 </header>

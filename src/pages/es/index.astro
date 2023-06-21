@@ -1,20 +1,26 @@
 ---
-import Header from "../components/Header.astro";
-import Profile from "../components/Profile.astro";
-import Timeline from "../components/Timeline.astro";
-import Studies from "../components/Studies.astro";
+import Header from "../../components/Header.astro";
+import Profile from "../../components/Profile.astro";
+import Timeline from "../../components/Timeline.astro";
+import Studies from "../../components/Studies.astro";
+import LanguagePicker from '../../components/LanguagePicker.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 let title = "Leandro Vilanova";
+let description = "Diseñador especializado en UI/UX con enfoque en el frontend, dedicado a crear interfaces y optimizarlas.";
 ---
 
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-    <meta name="description" content="Diseñador especializado en UI/UX con enfoque en el frontend, dedicado a crear interfaces y optimizarlas.">
+    <meta name="description" content={description}>
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
@@ -83,6 +89,9 @@ let title = "Leandro Vilanova";
       <Profile />
       <Timeline />
       <Studies />
+      <footer>
+        <LanguagePicker />
+      </footer>
     </div>
 	</body>
 </html>
