@@ -50,7 +50,7 @@ const jobs = [
 </style>
 
 <main class="col-span-2 row-span-2 md:-mt-16 xl:mt-0">
-  <h2 class="text-primary m-0 mt-16 text-4xl font-light uppercase border border-black text-center md:mt-0 md:inline-block md:px-10 xl:hidden">Experiencia</h2>
+  <h2 class="text-primary m-0 mt-16 text-4xl font-light uppercase border border-black text-center md:mt-0 md:inline-block md:px-4 xl:hidden">Experiencia</h2>
 
   <div class="flex text-xs xl:hidden">
     <div class="basis-1/3 pr-4 pb-6 text-right"></div>
@@ -69,7 +69,7 @@ const jobs = [
         <p class="pl-4 pb-6 relative md:pl-4">
           <Fragment set:html={item.info} />
           { index === 0 && (
-            <span class="absolute w-2 h-2 -top-1 -left-1 border-l-[4px] border-l-transparent border-b-[8px] border-black border-r-[4px] border-r-transparent"/>
+            <span class="hidden md:block absolute w-2 h-2 -top-1 -left-1 border-l-[4px] border-l-transparent border-b-[8px] border-black border-r-[4px] border-r-transparent"/>
           )}
           <span class="absolute w-2 h-2 bg-primary top-5 -left-1"/>
         </p>
