@@ -24,8 +24,9 @@ const jobs = t('jobs');
   { jobs.map((item, index) => (
     <div class="flex text-xs">
       <div class="basis-1/3 pr-4 pb-6 text-right">
-        <p>{ item.job }</p>
-        <p class="text-primary"><Fragment set:html={item.place} /></p>
+        <p class="bg-primary inline">{ item.job }</p>
+        <p><Fragment set:html={item.place} /></p>
+        
         <p>{ item.years }</p>
       </div>
 
