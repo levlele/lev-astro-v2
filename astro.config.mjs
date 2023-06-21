@@ -8,7 +8,6 @@ export default defineConfig({
   build: {
     format: "directory",
   },
-	srcDir: './en',
 	integrations: [
 	mdx(),
 	tailwind(),
