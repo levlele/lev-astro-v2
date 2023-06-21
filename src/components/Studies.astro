@@ -1,0 +1,47 @@
+---
+const studies = [
+  {
+    "id": "Licenciatura en Diseño y Comunicación Visual",
+    "place": "Universidad Nacional de Lanús"
+  },
+  {
+    "id": "Diseño UX",
+    "place": "Digital House"
+  },
+  {
+    "id": "Ilustración Tradicional",
+    "place": "Sótano Blanco, J.M.Giuffra 382, CABA"
+  },
+  {
+    "id": "Ilustración Digital",
+    "place": "Escuela XArte, Banfield, Buenos Aires"
+  },
+  {
+    "id": "Seminario de Posgrado de Ilustración y Procesos Digitales",
+    "place": "Universidad Nacional de San Martín"
+  },
+  {
+    "id": "Desarrollo",
+    "place": "html / Nunjucks / Astro / css / Sass / Tailwind / js / JQuery / Gulp / React / Next / React Native / Vue / Nuxt"
+  },
+  {
+    "id": "Diseño",
+    "place": "Adobe Creative Cloud / Sketch / Figma / Blender"
+  },
+  {
+    "id": "Inglés Avanzado",
+    "place": "Cultural Inglesa de Buenos Aires, Av. Cabildo 1008, CABA"
+  }
+];
+---
+
+<aside class="bg-black col-span-1 row-span-2 p-12 relative shadow-[8px_8px_0px_rgba(32,227,178,1)] mb-8">
+  <h2 class="text-white antialiased font-light text-5xl uppercase absolute left-[-114px] top-2/4 rotate-90">Estudios</h2>
+
+  { studies.map((study) => (
+    <p class="text-primary text-xs leading-5 mb-5">
+      <span class="block text-white">{ study.id }</span>
+      { study.place }
+    </p>
+  ))}
+</aside>

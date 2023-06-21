@@ -1,0 +1,79 @@
+---
+const jobs = [
+  {
+    "job": "Senior Frontend Developer",
+    "place": "<a class='underline hover:bg-secondary hover:text-black transition-colors ease-in-out duration-500' href='https://www.univtec.com/' rel='noopener noreferrer' target='_blank'>Univ</a>",
+    "years": "2022 - 2023",
+    "info": "Diseño y desarrollo de componentes reutilizables para librerías en React, React Native y Vue, en colaboración estrecha con el equipo de desarrollo, para su utilización en plataformas de streaming. Mantenimiento y actualización de componentes existentes."
+  },
+  {
+    "job": "Frontend Developer",
+    "place": "<a class='underline hover:bg-secondary hover:text-black transition-colors ease-in-out duration-500' href='https://www.workana.com/' rel='noopener noreferrer' target='_blank'>Workana</a>",
+    "years": "2021 - 2022",
+    "info": "En conjunto con el equipo de UX realizamos un rebranding completo de la plataforma a lo largo del primer Q del 2022. Se trabajó en el rediseño e implementación de la home page así como también en el proceso de onboarding de nuevos talentos."
+  },
+  {
+    "job": "Frontend Developer",
+    "place": "Insite Latin America S.A. para <a class='underline hover:bg-secondary hover:text-black transition-colors ease-in-out duration-500' href='https://education.hpe.com/ww/en/training/index.html' rel='noopener noreferrer' target='_blank'>Hewlett Packard Education</a>",
+    "years": "2020 - 2021",
+    "info": "Mantenimiento y actualización del sitio de HPE Education Services. En conjunto con 2 desarrolladores refactorizamos por completo el sitio, componetizándolo con React.js."
+  },
+  {
+    "job": "Frontend Developer",
+    "place": "Insite Latin America S.A. para <span class='md:whitespace-nowrap'>Mercado Libre</span>",
+    "years": "2020",
+    "info": "Miembro activo del Beta Squad de Activación de New Buyers. Trabajando en conjunto con los equipos de UX, MKT y la consultoría McKinsey & Company, en el desarrollo de experimentos tanto para email marketing como landing pages."
+  },
+  {
+    "job": "Project Manager / Frontend Developer",
+    "place": "Insite Latin America S.A. para <span class='md:whitespace-nowrap'>Mercado Pago</span>",
+    "years": "2015 - 2020",
+    "info": "A cargo de la coordinación y estructuración de proyectos de la cuenta; del control y asignación de recursos.<br><br> Implementación de campañas de email marketing.<br> Desarrollo de un generador de emails de uso interno utilizando nunjucks y gulp para compilar módulos y componentes desarrollados in site, agilizando el proceso de customización y creación de templates on demand.<br><br> Desarrollo y mantenimiento de landing pages.<br> A cargo del desarrollo del principal micrositio de marketing de la cuenta así como de campañas promocionales. Son proyectos en constante evolución en conjunto con el área de UX y MKT; actualmente en proceso de rediseño, para el cual me encuentro trabajando analizando alternativas de implementación de nuevas tecnologías."
+  },
+  {
+    "job": "Diseñador / Ilustrador",
+    "place": "Estudio Racha",
+    "years": "2012 - 2017",
+    "info": "Realización de ilustraciones, sitios web, producción de logotipos y gráfica."
+  },
+  {
+    "job": "Data Entry",
+    "place": "Fundición San Cayetano",
+    "years": "2003 - 2015",
+    "info": "Data entry, trabajos administrativos."
+  }
+];
+---
+
+<style>
+  p { text-wrap: balance }
+</style>
+
+<main class="col-span-2 row-span-2 md:-mt-16 xl:mt-0">
+  <h2 class="text-primary m-0 mt-16 text-4xl font-light uppercase border border-black text-center md:mt-0 md:inline-block md:px-10 xl:hidden">Experiencia</h2>
+
+  <div class="flex text-xs xl:hidden">
+    <div class="basis-1/3 pr-4 pb-6 text-right"></div>
+    <div class="basis-2/3 border-l border-black md:pr-6"></div>
+  </div>
+
+  { jobs.map((item, index) => (
+    <div class="flex text-xs">
+      <div class="basis-1/3 pr-4 pb-6 text-right">
+        <p>{ item.job }</p>
+        <p class="text-primary"><Fragment set:html={item.place} /></p>
+        <p>{ item.years }</p>
+      </div>
+
+      <div class="basis-2/3 border-l border-black md:pr-6">
+        <p class="pl-4 pb-6 relative md:pl-4">
+          { item.info }
+          { index === 0 && (
+            <span class="absolute w-2 h-2 -top-1 -left-1 border-l-[4px] border-l-transparent border-b-[8px] border-black border-r-[4px] border-r-transparent"/>
+          )}
+          <span class="absolute w-2 h-2 bg-primary top-5 -left-1"/>
+        </p>
+      </div>
+    </div>
+  ))}
+</main>

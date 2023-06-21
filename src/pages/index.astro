@@ -1,0 +1,87 @@
+---
+import Header from "../components/Header.astro";
+import Profile from "../components/Profile.astro";
+import Timeline from "../components/Timeline.astro";
+import Studies from "../components/Studies.astro";
+
+let title = "Leandro Vilanova";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+      @font-face {
+        font-display: swap;
+        font-family: 'Fira Code';
+        font-style: normal;
+        font-weight: 300;
+        src: url('../fonts/fira-code-300.woff2') format('woff2');
+      }
+      @font-face {
+        font-display: swap;
+        font-family: 'Fira Code';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/fira-code-400.woff2') format('woff2');
+      }
+    </style>
+	</head>
+
+	<body>
+    <div
+      class="font-fira md:max-w-[1440px] px-4 pt-4 md:m-auto md:grid grid-cols-2 md:grid-cols-3 lg:py-0 2xl:p-0"
+    >
+      <Header />
+      <Profile />
+      <Timeline />
+      <Studies />
+    </div>
+	</body>
+</html>
