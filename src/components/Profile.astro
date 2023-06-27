@@ -1,5 +1,6 @@
 ---
 import LanguagePicker from "./LanguagePicker.astro";
+import ToogleDarkMode from "./ToogleDarkMode.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -78,5 +79,6 @@ const t = useTranslations(lang);
       </a>
     </div>
   </div>
+  <ToogleDarkMode />
   <LanguagePicker />
 </section>
