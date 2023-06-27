@@ -1,18 +1,26 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const studies = t('studies');
+const studies = t("studies");
 ---
 
-<aside class="bg-black col-span-1 row-span-2 p-12 md:p-6 pb-16 lg:p-12 shadow-[8px_8px_0px_rgba(32,227,178,1)] mb-8 relative">
-  { studies.map((study) => (
-    <p class="text-primary text-xs leading-5 mb-5">
-      <span class="block text-white">{ study.title }</span>
-      { study.place }
-    </p>
-  ))}
-  <h2 class="text-white antialiased font-light text-3xl uppercase bg-primary px-4 pt-2 text-center absolute bottom-0 left-12 right-12 md:left-6 md:right-6 lg:left-12 lg:right-12">{t('studies.title')}</h2>
+<aside
+  class="relative col-span-1 row-span-2 mb-8 bg-black p-12 pb-16 shadow-[8px_8px_0px_rgba(32,227,178,1)] dark:bg-slate-800 md:p-6 lg:p-12"
+>
+  {
+    studies.map((study) => (
+      <p class="mb-5 text-xs leading-5 text-primary">
+        <span class="block text-white">{study.title}</span>
+        {study.place}
+      </p>
+    ))
+  }
+  <h2
+    class="absolute bottom-0 left-12 right-12 bg-primary px-4 pt-2 text-center text-3xl font-light uppercase text-white antialiased md:left-6 md:right-6 lg:left-12 lg:right-12"
+  >
+    {t("studies.title")}
+  </h2>
 </aside>
