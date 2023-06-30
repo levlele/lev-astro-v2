@@ -5,6 +5,9 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
 	trailingSlash: "always",
 	output: 'static',
+	experimental: {
+		assets: true,
+	},
   build: {
     format: "directory",
   },
