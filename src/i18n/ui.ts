@@ -77,14 +77,14 @@ export const ui = {
       {
         job: "Frontend Developer",
         place:
-          "<a class='underline hover:bg-secondary dark:hover:text-black transition-colors ease-in-out duration-500' href='https://insite-la.com/en/index.html' rel='noopener noreferrer' target='_blank'>Insite Latin America</a> for <span class='md:whitespace-nowrap'>Mercado Libre</span>",
+          "<a class='underline hover:bg-secondary dark:hover:text-black transition-colors ease-in-out duration-500' href='https://www.insite-la.com/' rel='noopener noreferrer' target='_blank'>Insite Latin America</a> for <span class='md:whitespace-nowrap'>Mercado Libre</span>",
         years: "2020",
         info: "Active member of the New Buyers Activation Beta Squad. Working in collaboration with the UX, marketing, and McKinsey & Company consulting teams, in the development of experiments for both email marketing and landing pages.",
       },
       {
         job: "Project Manager / Frontend Developer",
         place:
-          "<a class='underline hover:bg-secondary dark:hover:text-black transition-colors ease-in-out duration-500' href='https://insite-la.com/en/index.html' rel='noopener noreferrer' target='_blank'>Insite Latin America</a> for <span class='md:whitespace-nowrap'>Mercado Pago</span>",
+          "<a class='underline hover:bg-secondary dark:hover:text-black transition-colors ease-in-out duration-500' href='https://www.insite-la.com/' rel='noopener noreferrer' target='_blank'>Insite Latin America</a> for <span class='md:whitespace-nowrap'>Mercado Pago</span>",
         years: "2015 - 2020",
         info: "In charge of coordinating and structuring projects for the account, as well as controlling and allocating resources. Responsible for implementing email marketing campaigns.<br> Development of an internal email generator using Nunjucks and Gulp to compile on-site developed modules and components, streamlining the process of customization and creation of on-demand templates.<br><br> Development and maintenance of landing pages.<br> In charge of developing the main marketing microsite for the account, as well as promotional campaigns.",
       },
@@ -173,14 +173,14 @@ export const ui = {
       {
         job: "Frontend Developer",
         place:
-          "<a class='underline hover:bg-secondary dark:hover:text-black transition-colors ease-in-out duration-500' href='https://insite-la.com/en/index.html' rel='noopener noreferrer' target='_blank'>Insite Latin America</a> para <span class='md:whitespace-nowrap'>Mercado Libre</span>",
+          "<a class='underline hover:bg-secondary dark:hover:text-black transition-colors ease-in-out duration-500' href='https://www.insite-la.com/' rel='noopener noreferrer' target='_blank'>Insite Latin America</a> para <span class='md:whitespace-nowrap'>Mercado Libre</span>",
         years: "2020",
         info: "Miembro activo del Beta Squad de Activación de New Buyers. Trabajando en conjunto con los equipos de UX, MKT y la consultoría McKinsey & Company, en el desarrollo de experimentos tanto para email marketing como landing pages.",
       },
       {
         job: "Project Manager / Frontend Developer",
         place:
-          "<a class='underline hover:bg-secondary dark:hover:text-black transition-colors ease-in-out duration-500' href='https://insite-la.com/en/index.html' rel='noopener noreferrer' target='_blank'>Insite Latin America</a> para <span class='md:whitespace-nowrap'>Mercado Pago</span>",
+          "<a class='underline hover:bg-secondary dark:hover:text-black transition-colors ease-in-out duration-500' href='https://www.insite-la.com/' rel='noopener noreferrer' target='_blank'>Insite Latin America</a> para <span class='md:whitespace-nowrap'>Mercado Pago</span>",
         years: "2015 - 2020",
         info: "A cargo de la coordinación y estructuración de proyectos de la cuenta; del control y asignación de recursos.<br><br> Implementación de campañas de email marketing.<br> Desarrollo de un generador de emails de uso interno utilizando nunjucks y gulp para compilar módulos y componentes desarrollados in site, agilizando el proceso de customización y creación de templates on demand.<br><br> Desarrollo y mantenimiento de landing pages.<br> A cargo del desarrollo del principal micrositio de marketing de la cuenta así como de campañas promocionales.",
       },
