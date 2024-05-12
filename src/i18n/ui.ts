@@ -15,7 +15,7 @@ export const ui = {
     "profile.subtitle": "Self-taught fundamentalist.",
     "profile.contact": "Contact",
     "profile.hire": "Hire",
-    "studies.title": "Studies",
+    "studies.title": "Education",
     studies: [
       {
         title: "Bachelor's Degree in Design and Visual Communication",
@@ -111,7 +111,7 @@ export const ui = {
     "profile.subtitle": "Fundamentalista del autodidactismo.",
     "profile.contact": "Contactar",
     "profile.hire": "Contratar",
-    "studies.title": "Estudios",
+    "studies.title": "Educación",
     studies: [
       {
         title: "Licenciatura en Diseño y Comunicación Visual",
